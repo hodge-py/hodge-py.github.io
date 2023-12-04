@@ -1,15 +1,16 @@
 $(document).ready(function () {
     setPage = ['#homeSweet','#home']
 
-
+    $("#home").css('display', 'none');
+    $("#home").slideDown("slow");
     $(document).on('click','#about', function () {
-            $(setPage[1]).fadeOut('slow',function() {
+            $(setPage[1]).slideUp('slow',function() {
 
 
                 $("#about").css('color','rgb(115, 99, 255)');
                 $("#aboutTime").css('display','block');
 
-                $("#aboutTime").fadeIn("slow", function(){
+                $("#aboutTime").slideDown("slow", function(){
                 
                 $(setPage[0]).css('color','white');
                 $(setPage[1]).css('display','none');
@@ -37,12 +38,12 @@ $(document).ready(function () {
         }
 
         else{
-        $(setPage[1]).fadeOut('slow',function() {
+        $(setPage[1]).slideUp('slow',function() {
 
             $("#homeSweet").css('color','rgb(115, 99, 255)');
-                $("#home").css('display','block');
+            $("#home").css('display','block');
 
-            $("#home").fadeIn("slow", function(){
+            $("#home").slideDown("slow", function(){
                 
                 
                 $(setPage[0]).css('color','white');
