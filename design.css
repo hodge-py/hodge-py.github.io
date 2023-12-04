@@ -1,4 +1,8 @@
 body {
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(142,142,142,1) 100%);;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(61, 61, 61) 100%);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    font-family: 'Courier Prime', monospace;
 }
