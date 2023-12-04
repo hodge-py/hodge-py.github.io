@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 
                 $("#about").css('color','rgb(115, 99, 255)');
-                $("#aboutTime").css('display','block');
+                //$("#aboutTime").css('display','block');
 
                 $("#aboutTime").slideDown("slow", function(){
                 
@@ -41,7 +41,7 @@ $(document).ready(function () {
         $(setPage[1]).slideUp('slow',function() {
 
             $("#homeSweet").css('color','rgb(115, 99, 255)');
-            $("#home").css('display','block');
+            //$("#home").css('display','block');
 
             $("#home").slideDown("slow", function(){
                 
