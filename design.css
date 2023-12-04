@@ -31,3 +31,15 @@ a {
 #homeSweet{
     color:rgb(115, 99, 255);
 }
+
+#realpic{
+    margin-right:20px;
+}
+
+@media screen and (max-width: 992px) {
+    #realpic {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
