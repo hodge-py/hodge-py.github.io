@@ -3,38 +3,63 @@ $(document).ready(function () {
 
 
     $(document).on('click','#about', function () {
+            $(setPage[1]).fadeOut('slow',function() {
 
+
+                $("#about").css('color','rgb(115, 99, 255)');
+                $("#aboutTime").css('display','block');
+
+                $("#aboutTime").fadeIn("slow", function(){
+                
+                $(setPage[0]).css('color','white');
+                $(setPage[1]).css('display','none');
+    
+                setPage[0] = '#about'
+                setPage[1] = '#aboutTime'
+
+
+
+                });
+                
+
+                
+            });
         
-            $("#about").css('color','rgb(115, 99, 255)');
-            $("#aboutTime").css('display','block');
-
             
-            $(setPage[0]).css('color','white');
-            $(setPage[1]).css('display','none');
-
-            setPage[0] = '#about'
-            setPage[1] = '#aboutTime'
  
     });
 
 
     $(document).on('click','#homeSweet', function () {
-        
-            if(setPage[0] == '#homeSweet'){
+
+        if(setPage[0] == '#homeSweet'){
                 
-            }
-            else{
+        }
+
+        else{
+        $(setPage[1]).fadeOut('slow',function() {
+
             $("#homeSweet").css('color','rgb(115, 99, 255)');
-            $("#home").css('display','block');
+                $("#home").css('display','block');
 
+            $("#home").fadeIn("slow", function(){
+                
+                
+                $(setPage[0]).css('color','white');
+                $(setPage[1]).css('display','none');
+    
+                setPage[0] = '#homeSweet'
+                setPage[1] = '#home'
+    
+               
+
+
+
+            });
             
-            $(setPage[0]).css('color','white');
-            $(setPage[1]).css('display','none');
-
-            setPage[0] = '#homeSweet'
-            setPage[1] = '#home'
-
-            }
+        });
+        
+    }  
 
     });
 
