@@ -143,6 +143,7 @@
 <script
         src="https://unpkg.com/vue@3/dist/vue.global.js">
 </script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </body>
 
 <style>
@@ -208,19 +209,23 @@
 
 <script>
 
-    var i = 0;
-    var txt = "I'm karson, a Frontend/Backend Developer."; /* The text */
-    var speed = 70; /* The speed/duration of the effect in milliseconds */
+    $(document).ready(function() {
 
-    function typeWriter() {
-        if (i < txt.length) {
-            document.getElementById("body-text").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter, speed);
+        var i = 0;
+        var txt = "I'm karson, a Frontend/Backend Developer."; /* The text */
+        var speed = 70; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("body-text").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
         }
-    }
 
-    typeWriter();
+        typeWriter();
+
+    });
 
 
     const app = Vue.createApp({
