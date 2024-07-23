@@ -2,7 +2,8 @@ body {
     color: rgba(255, 255, 255, 0.95);
     margin: 0;
     padding: 0;
-    font-family: 'Games', sans-serif;
+    font-family: 'BlenderProBook';
+    src:  url('./cyberpunk-css-main/fonts/BlenderProBook.woff2');
 }
 
 .pValue {
@@ -38,6 +39,10 @@ p, h1, ul, li {
 }
 .button-home{
     font-size: 1vw;
+    font-family: 'Games', sans-serif;
+}
+.menu-list{
+    font-family: 'Games', sans-serif;
 }
 .gotCenter{
     font-size: 2vw;
@@ -63,7 +68,7 @@ p, h1, ul, li {
     color: #00ff9f;
 }
 .separate{
-    font-size: 1.7vw;
+    font-size: 1.5vw;
 }
 
 .imger{
