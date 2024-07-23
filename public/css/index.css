@@ -58,6 +58,22 @@ p, h1, ul, li {
     font-size: 1vw;
 }
 
+.project-name{
+    font-size: 2vw;
+    color: #00ff9f;
+}
+.separate{
+    font-size: 1.7vw;
+}
+
+.imger{
+    width: 20vw;
+}
+#body-text{
+    font-size: 2vw;
+}
+
+
 @media (max-width: 500px) {
     .changes {
         flex-direction: column;
@@ -99,5 +115,31 @@ p, h1, ul, li {
     .lan-boot{
         font-size: 3vw;
     }
+
+    .hover-style{
+        flex-direction: column-reverse;
+
+    }
+
+    .separate{
+        font-size: 3vw;
+    }
+    .project-name{
+        font-size: 3.5vw;
+        color: #00ff9f;
+    }
+    #projects{
+        text-align: center;
+    }
+    .imger{
+        width: 40vw;
+        margin: 0 auto 0 auto;
+    }
+
+    #body-text{
+        font-size: 3vw;
+    }
+
+
 
 }
