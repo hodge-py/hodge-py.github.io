@@ -1,0 +1,103 @@
+body {
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+    padding: 0;
+    font-family: 'Games', sans-serif;
+}
+
+.pValue {
+    text-shadow: 0 0px 2px black;
+}
+
+.lack {
+    text-decoration: none;
+}
+
+p, h1, ul, li {
+    text-shadow: black 0px 0px 10px;
+}
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.main-content {
+    background-image: url('../pexels-felixmittermeier-956999 (1).jpg');
+    background-size: repeat;
+    padding: 1% 0% 0% 0%;
+    min-height: 100vh;
+    animation: animatedBackground 600s linear infinite;
+}
+
+.hover-style:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.button-home{
+    font-size: 1vw;
+}
+.gotCenter{
+    font-size: 2vw;
+}
+.university{
+    font-size: 1.7vw
+}
+.degree{
+    font-size: 1.1vw
+}
+.concentration{
+    font-size: 1vw
+}
+.title-lang{
+    font-size: 1.5vw;
+}
+.lan-boot{
+    font-size: 1vw;
+}
+
+@media (max-width: 500px) {
+    .changes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gotCenter {
+        text-align: center;
+        font-size: 4vw;
+    }
+    .font-title{
+        font-size: 4vw;
+    }
+    .font-list{
+        font-size: 3vw;
+    }
+    #main-menu{
+        flex-direction: column;
+
+    }
+    .menu-list{
+        border-left-width: 0px !important;
+    }
+
+    .button-home{
+        font-size: 2vw;
+    }
+    .university{
+        font-size: 4vw
+    }
+    .degree{
+        font-size: 3vw
+    }
+    .concentration{
+        font-size: 2.5vw
+    }
+    .title-lang{
+        font-size: 4vw;
+    }
+    .lan-boot{
+        font-size: 3vw;
+    }
+
+}
