@@ -73,7 +73,8 @@ p, h1, ul, li {
 }
 
 .graphic {
-    width: 1.5vw;
+    width: 1.8vw;
+    display: block;
 }
 
 .project-name{
@@ -95,7 +96,14 @@ p, h1, ul, li {
 .changes {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
 
+.changes2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
 }
 
 .sticky {
@@ -107,12 +115,17 @@ p, h1, ul, li {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + #particles-js {
-    padding-top: 7%;
+    padding-top: 6%;
 }
 
 #particles-js {
     background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0.3) 0%, rgba(18,18,18,1) 100%);
+    background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(18,18,18,1) 100%);
+}
+
+.symbolborders{
+    border-bottom: 2px solid #00ff9f;
+    text-align: center;
 }
 
 
@@ -173,6 +186,8 @@ p, h1, ul, li {
     #body-text{
         font-size: 3vw;
     }
+
+
 
 
 
