@@ -253,10 +253,8 @@
 
 
         $(window).on("scroll",function( event ) {
-            console.log("heyafsa")
             var pct = $(document).scrollTop()/$(document).height()+.4,
                 bg = `radial-gradient(circle, rgba(0,0,0,${pct}) 0%, rgba(18,18,18,1) 100%)`;
-            console.log(pct);
             $("#particles-js").css("background", bg);
         });
 
