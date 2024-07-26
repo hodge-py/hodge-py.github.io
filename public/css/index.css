@@ -115,7 +115,7 @@ p, h1, ul, li {
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + #particles-js {
-    padding-top: 4vh;
+    padding-top: 3.9vh;
 }
 
 #particles-js {
@@ -129,7 +129,7 @@ p, h1, ul, li {
 }
 
 .timeabout{
-    padding: 5vh;
+    padding: 4vh;
 }
 
 
