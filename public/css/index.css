@@ -128,6 +128,10 @@ p, h1, ul, li {
     text-align: center;
 }
 
+.timeabout{
+    padding: 5vh;
+}
+
 
 @media (max-width: 500px) {
     .gotCenter {
@@ -196,6 +200,13 @@ p, h1, ul, li {
     }
     #header{
         font-size: 3vw;
+    }
+
+    .timeabout{
+        padding: 0vh;
+    }
+    #aboutP{
+        padding-bottom: 2vh;
     }
 
 
