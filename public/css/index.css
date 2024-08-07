@@ -128,6 +128,11 @@ p, h1, ul, li {
     text-align: center;
 }
 
+.symbolborders:hover{
+    background-color: rgba(10, 83, 190,.2);
+    border-radius: 5px;
+}
+
 .timeabout{
     padding: 4vh;
 }
