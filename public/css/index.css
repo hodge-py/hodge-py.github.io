@@ -126,6 +126,26 @@ p, h1, ul, li {
 .symbolborders{
     border-bottom: 2px solid #00ff9f;
     text-align: center;
+    -webkit-animation: action 3s infinite  alternate;
+    animation: action 3s infinite  alternate;
+}
+
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+#school1:hover{
+    cursor: pointer;
+}
+
+#school2:hover{
+    cursor: pointer;
 }
 
 .symbolborders:hover{
