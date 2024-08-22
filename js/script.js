@@ -170,7 +170,7 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                 }
 
                 else if(this.value !== ""){
-                    $(`<div>
+                    $(`<div style="color:red">
                         Error, Command not found, please type 'help' if unsure.<br>
                          
                         </div>
