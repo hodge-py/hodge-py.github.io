@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-
+    
     $(document).on("keypress", ".lineEnd", function(e){
         var key = (e.keyCode || e.which);
         if(key == 13 || key == 3) {
