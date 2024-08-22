@@ -6,6 +6,7 @@ $(document).ready(function(){
             $(this).each(function() {
                 $("<span />", { text: this.value, "class":"view" }).insertAfter(this);
                 $(this).hide();
+                var hold = this.value.substring(0,4)
                 if(this.value === "help"){
 
                     $(`<div>
@@ -169,9 +170,11 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                     });
                 }
 
-                else if(this.value !== ""){
-                    $(`<div style="color:red">
-                        Error, Command not found, please type 'help' if unsure.<br>
+                /*
+                else if(hold === "echo"){
+                    var g = this.value.substring(4,this.value.length);
+                    (`<div style="">
+                        <br>
                          
                         </div>
                         <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
@@ -184,7 +187,23 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                         setTimeout(function() { $("input").focus(); }, 0);
                     });
                 }
-                
+                */
+
+                else if(this.value !== ""){
+                    $(`<div style="color:red">
+                        TuxTerminal: Error, Command not found, please type 'help' if unsure.<br>
+                         
+                        </div>
+                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+                }
                 else{
                     $(`
                         <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
@@ -198,7 +217,6 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                         setTimeout(function() { $("input").focus(); }, 0);
                     });
                 }
-
 
 
 
