@@ -35,7 +35,8 @@ $(document).ready(function(){
                         --------<br>
                         LINKS<br>
                         <a target="_blank" href="https://github.com/hodge-py">Github</a><br>
-                        <a target="_blank" href="https://www.linkedin.com/in/karson-hodge/">linkedIn</a><br>
+                        <a target="_blank" href="https://www.linkedin.com/in/karson-hodge/">LinkedIn</a><br>
+                        <a target="_blank" href="https://1drv.ms/w/c/6ff555239ba34ed5/EdVOo5sjVfUggG99zAAAAAABuRg_yZ7LePIYZp8MMvy4Ig">Resume</a><br>
                         CONTACT<br>
                         <a target="_blank" href="mailto:khodge1@hotmail.com">Email</a><br>
                         OTHER PORTFOLIO<br>
@@ -169,7 +170,7 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                         setTimeout(function() { $("input").focus(); }, 0);
                     });
                 }
-                
+
                 else if(hold === "echo"){
                     var g = this.value.substring(4,this.value.length);
                     $(`<div style="">
