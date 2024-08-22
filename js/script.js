@@ -6,13 +6,14 @@ $(document).ready(function(){
             $(this).each(function() {
                 $("<span />", { text: this.value, "class":"view" }).insertAfter(this);
                 $(this).hide();
-                if(this.value === "exit"){
-                    console.log("exit")
-                }
-                else if(this.value === "help"){
+                if(this.value === "help"){
 
                     $(`<div>
-                        type 'resume' for a text based resume to be shown
+                        Type 'resume' for a text based resume to be shown<br>
+                        Type 'github' to view my GitHub account<br>
+                        Type 'linkedin' to view my LinkedIn<br>
+                        Type 'summary' for complete list<br>
+                        Type 'gui' for a graphical portfolio site<br>
                          
                         </div>
                         <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
@@ -25,6 +26,40 @@ $(document).ready(function(){
                         setTimeout(function() { $("input").focus(); }, 0);
                     });
                 }
+
+                else if(this.value === "summary"){
+
+                    $(`<div>
+                        SUMMARY<br>
+                        --------<br>
+                        LINKS<br>
+                        <a target="_blank" href="https://github.com/hodge-py">Github</a><br>
+                        <a target="_blank" href="https://www.linkedin.com/in/karson-hodge/">linkedIn</a><br>
+                        CONTACT<br>
+                        <a target="_blank" href="mailto:khodge1@hotmail.com">Email</a><br>
+                        OTHER PORTFOLIO<br>
+                        <a target="_blank" href="./gui">GUI Portfolio</a><br>
+                        <pre>
+ _  __                            _   _           _            
+| |/ /__ _ _ __ ___  ___  _ __   | | | | ___   __| | __ _  ___ 
+| ' // _\` | '__/ __|/ _ \\| '_ \\  | |_| |/ _ \\ / _\` |/ _\` |/ _ \\
+| . \\ (_| | |  \\__ \\ (_) | | | | |  _  | (_) | (_| | (_| |  __/
+|_|\\_\\__,_|_|  |___/\\___/|_| |_| |_| |_|\\___/ \\__,_|\\__, |\\___|
+                                                    |___/      
+                        </pre>
+                         
+                        </div>
+                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+                }
+
                 else if(this.value === "resume"){
                     $(`<div>
                         <pre>
@@ -91,6 +126,36 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
 
                 else if(this.value === "gui"){
                     window.open("./gui", '_blank').focus();
+
+                    $(`
+                       <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+                }
+
+                else if(this.value === "linkedin"){
+                    window.open("https://www.linkedin.com/in/karson-hodge/", '_blank').focus();
+
+                    $(`
+                       <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+                }
+
+                else if(this.value === "github"){
+                    window.open("https://github.com/hodge-py", '_blank').focus();
 
                     $(`
                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
