@@ -169,13 +169,11 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                         setTimeout(function() { $("input").focus(); }, 0);
                     });
                 }
-
-                /*
+                
                 else if(hold === "echo"){
                     var g = this.value.substring(4,this.value.length);
-                    (`<div style="">
-                        <br>
-                         
+                    $(`<div style="">
+                        ${g}<br>
                         </div>
                         <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
@@ -187,7 +185,7 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                         setTimeout(function() { $("input").focus(); }, 0);
                     });
                 }
-                */
+
 
                 else if(this.value !== ""){
                     $(`<div style="color:red">
