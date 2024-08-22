@@ -3,365 +3,128 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>hodgek-py Portfolio</title>
-    <link href="./public/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
-    <link href="./public/css/index.css" rel="stylesheet">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 </head>
-<body>
-<div id="app">
+<body class="ubuntu-mono-regular" style="background-color: #232323;">
 
+<div id="app" style="padding:1%;">
 
-<div id="#" class="d-flex flex-column container-fluid justify-content-center main-content" style="">
+    <div class="rounded d-flex flex-column" style="border: grey 2px solid; height: 97vh;">
 
-    <div id="main-menu" class="container d-flex justify-content-evenly " style="padding: 1% 10% 1% 10%;">
-
-        <div class="flex-grow-1 p-3 rounded" style="box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);">
-        <div class="" style="font-size: 6vw;color: #00b8ff;">
-            Hello There.
+        <div class="d-flex flex-grow-1 align-items-center" style="height: 3vh; background-color: slategrey; color: white; padding-left:1%;gap:1.2%;">
+            <div>&#10005;</div>
+            <div>&#8722;</div>
+            <div>&#10066;</div>
+            <div>TuxTerminal@KarsonHodge: ~</div>
         </div>
-            <div id="body-text" style="padding-bottom: 1%;">&nbsp;</div>
-            <div class="d-flex align-items-center" style="padding-bottom: 3%;"><svg height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#B1532F;" d="M64.022,295.136c-22.325,0-43.322-8.697-59.104-24.486c-6.531-6.531-6.531-17.112,0-23.642 l70.926-70.937c32.6-32.595,85.642-32.583,118.22,0c6.531,6.525,6.531,17.116,0,23.642l-70.937,70.937 C107.344,286.439,86.347,295.136,64.022,295.136z"></path> <path style="fill:#A64E2D;" d="M253.18,511.99c-4.278,0-8.556-1.633-11.82-4.893c-15.794-15.788-24.491-36.78-24.491-59.116 c0-22.33,8.697-43.322,24.491-59.11l70.937-70.932c3.135-3.135,7.391-4.899,11.82-4.899l0,0c4.431,0,8.686,1.763,11.82,4.899 c32.589,32.595,32.589,85.626,0,118.22L265,507.091C261.735,510.357,257.457,511.99,253.18,511.99z"></path> <path style="fill:#E2E7EC;" d="M292.59,384.926L409.27,268.25c16.782-16.784,30.683-35.698,41.679-55.989 c5.7-10.52,10.642-21.393,14.706-32.583L332.328,46.352c-11.191,4.064-22.064,9.006-32.583,14.706 c-20.292,10.997-39.206,24.898-55.991,41.681L127.084,219.42L292.59,384.926z"></path> <path style="fill:#CCD5E0;" d="M465.654,179.679l-66.662-66.662L209.836,302.172l82.753,82.753l116.68-116.675 c16.782-16.784,30.683-35.698,41.679-55.989C456.647,201.742,461.591,190.868,465.654,179.679z"></path> <path style="fill:#6E6057;" d="M438.399,73.609c-6.527-6.527-6.531-17.114,0-23.644l45.059-45.059 c6.531-6.531,17.117-6.527,23.644,0c6.527,6.527,6.53,17.114,0,23.644l-45.059,45.059C455.513,80.14,444.926,80.136,438.399,73.609z "></path> <path style="fill:#615349;" d="M462.043,73.609l45.059-45.059c6.531-6.531,6.527-17.117,0-23.644L438.398,73.61 C444.926,80.136,455.513,80.14,462.043,73.609z"></path> <path style="fill:#F3D583;" d="M175.122,438.425c-10.03,22.069-29.87,39.123-53.278,45.476l-100.76,27.531 c-1.449,0.334-2.898,0.557-4.347,0.557c-4.347,0-8.694-1.672-11.816-4.904c-4.234-4.236-5.907-10.477-4.346-16.162l27.531-100.761 c3.121-11.703,9.029-22.515,16.831-31.655c7.914-9.14,17.722-16.608,28.757-21.623c20.397-9.14,43.358-8.917,62.864,0.669 c8.137,4.013,15.605,9.363,22.069,15.827c6.466,6.465,11.816,13.933,15.827,22.069C184.04,394.956,184.263,417.917,175.122,438.425z "></path> <path style="fill:#EFC36C;" d="M175.122,438.425c-10.03,22.069-29.87,39.123-53.278,45.476l-100.76,27.531 c-1.449,0.334-2.898,0.557-4.347,0.557c-4.347,0-8.694-1.672-11.816-4.904L158.626,353.38c6.466,6.465,11.816,13.933,15.827,22.069 C184.04,394.956,184.263,417.917,175.122,438.425z"></path> <path style="fill:#84BCFC;" d="M324.117,235.182h0.109H324.117z M335.939,176.069c-19.546-19.546-51.387-19.547-70.934,0 c-9.457,9.457-14.659,22.067-14.659,35.467c-0.001,13.398,5.202,26.008,14.659,35.466c9.773,9.773,22.62,14.738,35.466,14.659 c12.847,0.079,25.694-4.886,35.467-14.659C355.486,227.456,355.485,195.614,335.939,176.069z"></path> <path style="fill:#78A8E2;" d="M335.939,247.003c-9.773,9.773-22.62,14.739-35.467,14.659c-12.846,0.079-25.693-4.886-35.466-14.659 l70.934-70.934C355.485,195.614,355.486,227.456,335.939,247.003z"></path> <g> <path style="fill:#BF6745;" d="M127.08,219.417L83.626,312.65c-2.003,6.009-0.447,12.631,4.038,17.11l94.579,94.579 c3.189,3.189,7.456,4.898,11.822,4.898c1.774,0,3.56-0.283,5.29-0.861l93.214-43.473L127.08,219.417z"></path> <path style="fill:#BF6745;" d="M465.654,179.679c14.878-40.98,18.631-85.824,9.795-130.002 c-1.317-6.624-6.499-11.795-13.117-13.117c-44.18-8.84-89.023-5.087-130.005,9.793c-11.191,4.064-22.064,9.006-32.583,14.706 l151.203,151.203C456.647,201.742,461.591,190.868,465.654,179.679z"></path> </g> <g> <path style="fill:#B1532F;" d="M450.947,212.261c5.7-10.52,10.642-21.393,14.706-32.583c14.878-40.98,18.631-85.824,9.795-130.002 c-0.658-3.312-2.284-6.261-4.57-8.547l-95.531,95.531L450.947,212.261z"></path> <path style="fill:#B1532F;" d="M134.956,377.052l47.287,47.287c3.189,3.189,7.456,4.898,11.822,4.898 c1.774,0,3.56-0.283,5.29-0.861l93.215-43.472l-82.733-82.732L134.956,377.052z"></path> </g> </g></svg></div>
+
+
+        <div id="terminal" style="overflow-y: scroll;height:93vh; color: white; padding-left: .3%; padding-bottom: 1%;">
+            <div><span style="color: chartreuse;">TuxTerminal@KarsonHodge:~$</span></div>
             <div class="d-flex align-items-center">
-            <a target="_blank" href="https://1drv.ms/w/c/6ff555239ba34ed5/EdVOo5sjVfUggG99zAAAAAABuRg_yZ7LePIYZp8MMvy4Ig?e=3afg32" style="margin-right: 1%;"><button class="button-home" >Resume</button></a>
-            <a target="_blank" href="https://github.com/hodge-py" style="margin-right: 1%;"><button class="button-home">Github</button></a>
-                <a target="_blank" href="https://www.linkedin.com/in/karson-hodge/"><button class="button-home" >LinkedIn</button></a>
-            </div>
-        </div>
 
+                <div>
+                    <pre>
+                  .88888888:.
+                88888888.88888.
+              .8888888888888888.
+              888888888888888888
+              88' _`88'_  `88888
+              88 88 88 88  88888
+              88_88_::_88_:88888
+              88:::,::,:::::8888
+              88`:::::::::'`8888
+             .88  `::::'    8:88.
+            8888            `8:888.
+          .8888'             `888888.
+         .8888:..  .::.  ...:'8888888:.
+        .8888.'     :'     `'::`88:88888
+       .8888        '         `.888:8888.
+      888:8         .           888:88888
+    .888:88        .:           888:88888:
+    8888888.       ::           88:888888
+    `.::.888.      ::          .88888888
+   .::::::.888.    ::         :::`8888'.:.
+  ::::::::::.888   '         .::::::::::::
+  ::::::::::::.8    '      .:8::::::::::::.
+ .::::::::::::::.        .:888:::::::::::::
+ :::::::::::::::88:.__..:88888:::::::::::'
+  `'.:::::::::::88888888888.88:::::::::'
+        `':::_:' -- '' -'-' `':_::::'`
 
-    </div>
-
-    </div>
-
-
-    <div id="header" class="d-flex justify-content-end align-items-center menu-list" style="background-color: rgba(0,0,0,.95); padding: .5% 2% .5% 0%; gap: 4%;">
-        <div class="pValue" style=""><a class="lack" href="#">Home</a></div>
-        <div class="pValue" style=""><a class="lack" href="#about">About</a></div>
-        <div class="pValue"><a class="lack" href="#education">Education</a></div>
-        <div class="pValue"><a class="lack" href="#experience">Experience</a></div>
-        <div class="pValue"><a class="lack" href="#projects">Projects</a></div>
-    </div>
-
-
-<div id="particles-js">
-
-    <div id="about" class="d-flex flex-column container-fluid justify-content-center set-back" style="padding-top: 5%;padding-bottom: 5%;">
-
-        <div class="container d-flex justify-content-center" style="padding-bottom: 5%;">
-
-            <div class="p-4" style="">
-                <h1 class="px-2 text-center" style="font-size: 3vw;color: #00b8ff;border: 4px solid #00ff9f; border-right: none; border-top: none;padding: 1%;">
-                    <b>About</b>
-                </h1>
-            </div>
-
-        </div>
-
-        <div id="switcher" class="container d-flex justify-content-evenly" style="gap: 1%;" >
-
-            <div class="w-50 timeabout d-flex flex-column align-items-center">
-                <img src="public/output-onlinepngtools.png" style="width: 20vh; padding-bottom: 5%;">
-                <div id="aboutP">Current second year masters student at Southern Arkansas University focusing on computer and data science. Passionate about new
-                challenges that relate to both the frontend and backend of web development while using HTML/CSS/JS/PHP frameworks. Other regions of study include data science and
-                machine learning. My dream is to work within a company as a full stack developer because of my love of both ends of development. In my free time I enjoy playing guitar, piano, and video games.</div>
-            </div>
-
-            <div class="flex-grow-1" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10%;">
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center"><svg class="graphic" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0164 2C10.8193 2 9.03825 3.72453 9.03825 5.85185V8.51852H15.9235V9.25926H5.97814C3.78107 9.25926 2 10.9838 2 13.1111L2 18.8889C2 21.0162 3.78107 22.7407 5.97814 22.7407H8.27322V19.4815C8.27322 17.3542 10.0543 15.6296 12.2514 15.6296H19.5956C21.4547 15.6296 22.9617 14.1704 22.9617 12.3704V5.85185C22.9617 3.72453 21.1807 2 18.9836 2H13.0164ZM12.0984 6.74074C12.8589 6.74074 13.4754 6.14378 13.4754 5.40741C13.4754 4.67103 12.8589 4.07407 12.0984 4.07407C11.3378 4.07407 10.7213 4.67103 10.7213 5.40741C10.7213 6.14378 11.3378 6.74074 12.0984 6.74074Z" fill="url(#paint0_linear_87_8204)"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815L16.0763 23.4815L16.0763 22.7408L26.0217 22.7408C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928L23.7266 9.25928V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704L12.4042 16.3704C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296L9.03809 26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z" fill="url(#paint1_linear_87_8204)"></path> <defs> <linearGradient id="paint0_linear_87_8204" x1="12.4809" y1="2" x2="12.4809" y2="22.7407" gradientUnits="userSpaceOnUse"> <stop stop-color="#327EBD"></stop> <stop offset="1" stop-color="#1565A7"></stop> </linearGradient> <linearGradient id="paint1_linear_87_8204" x1="19.519" y1="9.25928" x2="19.519" y2="30" gradientUnits="userSpaceOnUse"> <stop stop-color="#FFDA4B"></stop> <stop offset="1" stop-color="#F9C600"></stop> </linearGradient> </defs> </g></svg><div  style="">Python</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center"><svg class="graphic" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z" fill="#E76F00"></path> <path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z" fill="#E76F00"></path> <path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z" fill="#5382A1"></path> <path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z" fill="#5382A1"></path> <path d="M11.6864 22.4758C9.55624 22.2592 10.951 21.2439 10.951 21.2439C5.43898 23.0429 14.0178 25.083 21.7199 22.8682C20.9012 22.5844 20.3806 22.0653 20.3806 22.0653C16.6163 22.7781 14.441 22.7553 11.6864 22.4758Z" fill="#5382A1"></path> <path d="M12.6145 25.6991C10.486 25.4585 11.7295 24.7474 11.7295 24.7474C6.72594 26.1222 14.7729 28.9625 21.1433 26.2777C20.0999 25.8787 19.3528 25.4181 19.3528 25.4181C16.5111 25.9469 15.1931 25.9884 12.6145 25.6991Z" fill="#5382A1"></path> <path d="M25.9387 27.3388C25.9387 27.3388 26.8589 28.0844 24.9252 28.6612C21.2481 29.7566 9.62093 30.0874 6.39094 28.7049C5.22984 28.2082 7.40723 27.5189 8.09215 27.3742C8.80646 27.2219 9.21466 27.2503 9.21466 27.2503C7.9234 26.3558 0.868489 29.0067 5.63111 29.7659C18.6195 31.8372 29.3077 28.8331 25.9387 27.3388Z" fill="#5382A1"></path> <path d="M28 28.9679C27.7869 31.6947 18.7877 32.2683 12.9274 31.8994C9.10432 31.6583 8.33812 31.0558 8.32691 31.047C11.9859 31.6402 18.1549 31.7482 23.1568 30.8225C27.5903 30.0016 28 28.9679 28 28.9679Z" fill="#5382A1"></path> </g></svg><div  style="">Java</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center"><svg class="graphic" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="#8892BF"></circle> <path d="M14.4392 10H16.1192L15.6444 12.5242H17.154C17.9819 12.5419 18.5986 12.7269 19.0045 13.0793C19.4184 13.4316 19.5402 14.1014 19.3698 15.0881L18.5541 19.4889H16.8497L17.6288 15.2863C17.7099 14.8457 17.6856 14.533 17.5558 14.348C17.426 14.163 17.146 14.0705 16.7158 14.0705L15.3644 14.0573L14.3661 19.4889H12.6861L14.4392 10Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6.74092 12.5243H10.0036C10.9612 12.533 11.6552 12.8327 12.0854 13.4229C12.5156 14.0132 12.6576 14.8193 12.5115 15.8414C12.4548 16.3085 12.3289 16.7665 12.1341 17.2159C11.9474 17.6652 11.6878 18.0704 11.355 18.4317C10.9491 18.8898 10.5149 19.1805 10.0523 19.304C9.58969 19.4274 9.11076 19.489 8.61575 19.489H7.15484L6.69222 22H5L6.74092 12.5243ZM7.43485 17.9956L8.16287 14.0441H8.40879C8.49815 14.0441 8.5914 14.0396 8.6888 14.0309C9.33817 14.0221 9.87774 14.0882 10.308 14.2291C10.7462 14.37 10.8923 14.9031 10.7462 15.8282C10.5678 16.9296 10.2186 17.5727 9.69926 17.7577C9.1799 17.934 8.53053 18.0176 7.75138 18.0088H7.58094C7.53224 18.0088 7.48355 18.0043 7.43485 17.9956Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M24.4365 12.5243H21.1738L19.4329 22H21.1251L21.5878 19.489H23.0487C23.5437 19.489 24.0226 19.4274 24.4852 19.304C24.9479 19.1805 25.382 18.8898 25.7879 18.4317C26.1207 18.0704 26.3803 17.6652 26.567 17.2159C26.7618 16.7665 26.8877 16.3085 26.9444 15.8414C27.0905 14.8193 26.9486 14.0132 26.5183 13.4229C26.0881 12.8327 25.3942 12.533 24.4365 12.5243ZM22.5958 14.0441L21.8678 17.9956C21.9165 18.0043 21.9652 18.0088 22.0139 18.0088H22.1843C22.9635 18.0176 23.6128 17.934 24.1322 17.7577C24.6515 17.5727 25.0007 16.9296 25.1792 15.8282C25.3253 14.9031 25.1792 14.37 24.7409 14.2291C24.3107 14.0882 23.7711 14.0221 23.1217 14.0309C23.0243 14.0396 22.9311 14.0441 22.8417 14.0441H22.5958Z" fill="white"></path> </g></svg><div  style="">PHP</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center"><svg class="graphic" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
-                    <div  style="">HTML</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center"><svg class="graphic" viewBox="0 -17.5 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36z" fill="#41B883"></path><path d="M0 0l128 220.8L256 0h-51.2L128 132.48 50.56 0H0z" fill="#41B883"></path><path d="M50.56 0L128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56z" fill="#35495E"></path></g></svg>
-                    <div  style="">Vuejs</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center">                 <svg class="graphic" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z" fill="#563D7C"> </path> <path d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z" fill="#FFFFFF"> </path> </g> </g></svg>
-                    <div  style="">Bootstrap</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center">                 <svg class="graphic" fill="#ffffff" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>pandas</title> <path d="M11.849 2.813h3.269v6.787h-3.268zM11.849 16.755h3.269v6.789h-3.268zM11.849 11.582h3.269v3.203h-3.268zM6.598 8.393h3.268v22.563h-3.269zM16.992 22.356h3.269v6.787h-3.269zM16.992 8.401h3.269v6.787h-3.269zM16.992 17.171h3.269v3.203h-3.269zM22.134 1.045h3.269v22.563h-3.269z"></path> </g></svg>
-                    <div  style="">Pandas</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center">                 <svg class="graphic" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
-                    <div  style="">CSS</div>
-                </div>
-                <div class="symbolborders d-flex flex-column align-items-center justify-content-center">                <svg class="graphic" xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#f7df1e"></rect><path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z"></path></g></svg>
-                    <div  style="">JS</div>
+                    </pre>
                 </div>
 
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div id="education" class="d-flex flex-column container set-back" style="">
-
-
-                <div class="d-flex gotCenter pb-5 mt-5 pt-5" style=" color: #00b8ff;">
-                    <h1 style="font-size: 3vw; border: 4px solid #00ff9f; border-right: none; border-top: none; padding:1%;">
-                    <b>Education</b>
-                    </h1>
-                </div>
-                <div class="d-flex ms-5" >
-                    <div class=" changes flex-grow-1" style="border-left: 4px solid #bd00ff; padding-left: 1%;">
-                        <div v-on:click="showSchool" v-model="school1Show" id="school1" class="font-list pb-4" style="">
-                            <h3 style="">Southern Arkansas University 2023/2025</h3>
-                                <h6 style="">Masters of Science in Computer and Information Science</h6>
-                            <p><i>Concentration in Data Science</i></p>
-                            <div id="schoolSec" style="display: none; border-left: 2px solid #00ff9f;padding-left: 1%;">
-                                Advanced Programming, Database Systems,<br> and Computer Networking.
-                            </div>
-
-                        </div>
-                        <div v-on:click="showSchool2" v-model="school2Show" id="school2" class="font-list" style="">
-                            <h3>University of Lethbridge 2016/2021</h3>
-                                <h6 style="">Bachelors of Science in Applied Statistics</h6>
-                            <p><i>Concentration in Economics</i></p>
-                            <div id="schoolFirst" style="display: none; border-left: 2px solid #00ff9f;padding-left: 1%;">
-                                Statistical Learning, Calculus IV,<br> and Statistical Inference.
-                            </div>
+                <div>
+                    <div>
+                    TuxTerminal
                     </div>
-
+                    <div>
+                        -----------
                     </div>
-
-
-
-                </div>
-
-    </div>
-
-    <div id="experience" class="d-flex flex-column container set-back" style="">
-
-
-        <div class="d-flex justify-content-end gotCenter pb-5 pt-5 mt-5 classist" style=" color: #00b8ff;">
-            <h1 id="fonter" style="font-size: 3vw; border: 4px solid #00ff9f; border-right: none; border-top: none; padding:1%;">
-                <b>Experience</b>
-            </h1>
-        </div>
-        <div class="d-flex ms-5">
-            <div class="changes2 flex-grow-1">
-                <div class="pe-5">
-
-                <div class="font-list pb-4" >
-                    <div style="border-left: 2px solid #00ff9f; padding-left: 1%;">
-                        <h4>Eaton Corporation</h4>
-                    <p style="border-left: 2px solid #bd00ff; padding-left: 1%;"><i>Continuous Improvement Intern/May 2023-Present</i></p>
+                    <div>
+                        Created By KARSON HODGE
                     </div>
-                </div>
-                <div class="font-list pb-4" style="">
-                    <div style="border-left: 2px solid #00ff9f; padding-left: 1%;">
-                        <h4>Peoples Trust Company</h4>
-                    <p style="border-left: 2px solid #bd00ff; padding-left: 1%;"><i>Real Estate Analyst/2022 Feb-July 2023</i></p>
+                    <div>
+                        Type 'help' for list of commands
                     </div>
-                </div>
-                    <div class="font-list" style="">
-                        <div style="border-left: 2px solid #00ff9f; padding-left: 1%;">
-                            <h4>Universal Rehabilitation Service Agency</h4>
-                        <p style="border-left: 2px solid #bd00ff; padding-left: 1%;"><i>Data Analyst and Quality Assurance/2021 Nov - 2022 Feb</i></p>
-                        </div>
+                    <div>
+                        Type 'exit' to close the terminal
                     </div>
-
+                    <div>Type 'gui' for a graphical portfolio site</div>
+                    <div>Please enjoy!</div>
 
                 </div>
 
             </div>
 
+            <div class="cursor"><span style="color: chartreuse;padding-right: .7%;">TuxTerminal@KarsonHodge:~$</span>
+                <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" />
+            </div>
+
+
 
 
         </div>
 
-    </div>
-
-
-
-    <div class="container">
-
-
-
-
 
     </div>
-
-
-
-
-
-
-    <div id="projects" class="d-flex flex-column container justify-content-center set-back" style="">
-
-
-            <div class="flex-grow-1 rounded pb-3" style="">
-                <div class="d-flex gotCenter pb-5 mt-5 pt-5" style=" color: #00b8ff;">
-                    <h1 style="font-size: 3vw; border: 4px solid #00ff9f; border-right: none; border-top: none; padding:1%;">
-                        <b>Projects</b>
-                    </h1>
-                </div>
-
-                <a href="https://tmplink.xyz" target="_blank" style="text-decoration: none; color: white;">
-                    <div class="d-flex hover-style mb-2 p-4 rounded" >
-                    <img class="rounded imger" src="tmplink-xyz-.jpg" alt="" style="">
-                    <div class="p-2">
-                    <p class="project-name" >TmpLink</p>
-                        <p class="separate">Temporary files that can be shared by link or QR code. </p>
-                        <p class="separate">PHP, HTML/CSS/JS, jQuery, Bootstrap. </p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://unknown-md.com" target="_blank" style="text-decoration: none; color: white;">
-                <div class="d-flex hover-style mb-2 p-4 rounded">
-                    <img class="rounded imger" src="www-unknown-md-com1.jpg" alt="">
-                    <div class="p-2">
-                        <p class="project-name" >Unknown&ndash;md</p>
-                        <p class="separate">All in one markdown editor and renderer.</p>
-                        <p class="separate">PHP, HTML/CSS/JS, jQuery, Bootstrap. </p>
-                    </div>
-                </div>
-                </a>
-
-                    <a href="https://github.com/hodge-py/TimeComplex" target="_blank" style="text-decoration: none; color: white;">
-                <div class="d-flex hover-style p-4 rounded">
-                    <img class="rounded imger" src="markdown-image-9413251.jpeg" alt="">
-                    <div class="p-2">
-                        <p class="project-name" >TimeComplex</p>
-                        <p class="separate">Empirical method for timing algorithms.</p>
-                        <p class="separate">Assembled as a Python module.</p>
-                    </div>
-                </div>
-                    </a>
-
-                <a href="https://pxlart.xyz" target="_blank" style="text-decoration: none; color: white;">
-                    <div class="d-flex hover-style p-4 rounded">
-                        <img class="rounded imger" src="screenforwebsite.png" alt="">
-                        <div class="p-2">
-                            <p class="project-name" >PxlArt</p>
-                            <p class="separate">Tool for creating pixel art.</p>
-                            <p class="separate">VueJs, Vuetify, HTML/CSS/JS, jQuery.</p>
-                        </div>
-                    </div>
-                </a>
-
-                </div>
-
-        </div>
 
 
 
 </div>
 
-
-</div>
-
-
-<script src="./public/js/bootstrap.bundle.min.js"></script>
-<script
-        src="https://unpkg.com/vue@3/dist/vue.global.js">
-</script>
-<script src="./public/js/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/script.js"></script>
 </body>
 
+<style>
+:root {
+color-scheme: dark;
+}
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
 
-<script>
+textarea:focus, input:focus{
+    outline: none;
+}
 
-    $(document).ready(function() {
-
-
-        $(window).on("scroll",function( event ) {
-            var pct = $(document).scrollTop()/$(document).height()+.4,
-                bg = `radial-gradient(circle, rgba(0,0,0,${pct}) 0%, rgba(18,18,18,1) 100%)`;
-            $("#particles-js").css("background", bg);
-        });
-
-
-        var i = 0;
-        var txt = "I'm Karson Hodge, a Fullstack Developer."; /* The text */
-        var speed = 70; /* The speed/duration of the effect in milliseconds */
-        document.getElementById("body-text").innerHTML = ""
-        function typeWriter() {
-
-            if (i < txt.length) {
-                document.getElementById("body-text").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        typeWriter();
+*:focus {
+    outline: none;
+}
 
 
-        window.onscroll = function() {myFunction()};
+</style>
 
-// Get the header
-        var header = document.getElementById("header");
-
-// Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-
-    });
-
-
-    const app = Vue.createApp({
-        data() {
-            return {
-                message: "Hello World!",
-                count: 0,
-                xPos: 0,
-                yPos: 0,
-                school1Show: false,
-                school2Show: false
-            }
-        },
-        methods: {
-            mousePos(event) {
-                this.xPos = event.offsetX
-                this.yPos = event.offsetY
-            },
-            showSchool(){
-                this.school1Show = !this.school1Show;
-                if(this.school1Show){
-                    $("#schoolSec").css("display", "flex");
-                }
-                else{
-                    $("#schoolSec").css("display", "none");
-                }
-
-            },
-
-            showSchool2(){
-                this.school2Show = !this.school2Show;
-                if(this.school2Show){
-                    $("#schoolFirst").css("display", "flex");
-                }
-                else{
-                    $("#schoolFirst").css("display", "none");
-                }
-
-            }
-
-        }
-    })
-
-    app.mount('#app');
-
-</script>
 
 </html>
