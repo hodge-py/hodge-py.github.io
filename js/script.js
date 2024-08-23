@@ -13,8 +13,8 @@ $(document).ready(function(){
                         Type 'resume' for a text based resume to be shown<br>
                         Type 'github' to view my GitHub account<br>
                         Type 'linkedin' to view my LinkedIn<br>
-                        Type 'summary' for complete list<br>
-                        Type 'gui' for a graphical portfolio site<br>
+                        Type 'summary' for a complete list<br>
+                        Type 'gui' for the graphical portfolio site<br>
                          
                         </div>
                         <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
@@ -157,7 +157,7 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                 }
 
                 else if(this.value === "github"){
-                    window.open("https://github.com/hodge-py", '_blank').focus();
+                    window.open(configJson["social"]["github"], '_blank').focus();
 
                     $(`
                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
@@ -175,6 +175,35 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
                     var g = this.value.substring(4,this.value.length);
                     $(`<div style="">
                         ${g}<br>
+                        </div>
+                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+                }
+
+                else if(this.value === "files"){
+                    var links = ""
+                    for (const key in configJson){
+                        if(key === "files"){
+                            if (configJson.hasOwnProperty(key)) {
+                                for (const key1 in configJson[key]){
+                                    console.log(configJson[key][key1]);
+                                    links += "<a href=" + configJson[key][key1] + " target='_blank'>" + configJson[key][key1] + "</a><br>"
+                                }
+                            }
+                        }
+                    }
+
+                    $(`<div style="">
+                        Files<br>
+                        -----<br>
+                        ${links}
                         </div>
                         <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
@@ -245,6 +274,15 @@ LinkedIn: https://www.linkedin.com/in/karson-hodge/
     $("input").select().focus().blur(function() {
         setTimeout(function() { $("input").focus(); }, 0);
     });
+
+    var configJson = ""
+
+    $.getJSON("config.json", function(json) {
+        configJson = json; // this will show the info it in firebug console
+    });
+
+
+
 
 
 
