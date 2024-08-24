@@ -3,10 +3,10 @@
   "social": {
     "github": "https://github.com/hodge-py",
     "linkedin": "https://www.linkedin.com/in/karson-hodge/",
-    "resumeLink": ""
+    "resumeLink": "https://1drv.ms/w/c/6ff555239ba34ed5/EdVOo5sjVfUggG99zAAAAAABuRg_yZ7LePIYZp8MMvy4Ig"
   },
   "email": "khodge1@hotmail.com",
-  "gui": "",
+  "gui": "./gui",
   "files": {
     "first": "Resume_Karson_Hodge.txt"
   },

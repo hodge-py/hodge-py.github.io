@@ -47,13 +47,13 @@ $(document).ready(function(){
                         SUMMARY<br>
                         --------<br>
                         LINKS<br>
-                        <a target="_blank" href="https://github.com/hodge-py">Github</a><br>
-                        <a target="_blank" href="https://www.linkedin.com/in/karson-hodge/">LinkedIn</a><br>
-                        <a target="_blank" href="https://1drv.ms/w/c/6ff555239ba34ed5/EdVOo5sjVfUggG99zAAAAAABuRg_yZ7LePIYZp8MMvy4Ig">Resume</a><br>
+                        <a target="_blank" href=${configJson["social"]["github"]}>Github</a><br>
+                        <a target="_blank" href=${configJson["social"]["linkedin"]}>LinkedIn</a><br>
+                        <a target="_blank" href=${configJson["social"]["resumeLink"]}>Resume</a><br>
                         CONTACT<br>
-                        <a target="_blank" href="mailto:khodge1@hotmail.com">Email</a><br>
+                        <a target="_blank" href="mailto:${configJson["email"]}" >Email</a><br>
                         OTHER PORTFOLIO<br>
-                        <a target="_blank" href="./gui">GUI Portfolio</a><br>
+                        <a target="_blank" href=${configJson["gui"]}>GUI Portfolio</a><br>
                         <pre>
  ${configJson["asciiName"]} 
                         </pre>
@@ -89,7 +89,7 @@ $(document).ready(function(){
                 }
 
                 else if(this.value === "gui"){
-                    window.open("./gui", '_blank').focus();
+                    window.open(configJson["gui"], '_blank').focus();
 
                     $(`
                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
