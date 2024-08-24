@@ -7,6 +7,10 @@ $(document).ready(function(){
         // this will show the info it in firebug console
         $("#name2").text(`Created By ${configJson["secondName"]}`)
         $("#barTerm").text(`TuxTerminal@${configJson["nameTop"]}: ~$`)
+        $("body").css({"background-color": configJson["colors"]["background"]})
+        $(".textColor").css("color", configJson["colors"]["textColor"]);
+        $(".topBar").css({"background-color": configJson["colors"]["topBar"]})
+
     });
 
     $(document).on("keypress", ".lineEnd", function(e){
@@ -26,7 +30,7 @@ $(document).ready(function(){
                         Type 'gui' for the graphical portfolio site<br>
                          
                         </div>
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -55,7 +59,7 @@ $(document).ready(function(){
                         </pre>
                          
                         </div>
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -72,7 +76,7 @@ $(document).ready(function(){
                         ${configJson["plainResume"]}
                          </pre>
                         </div>
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -88,7 +92,7 @@ $(document).ready(function(){
                     window.open("./gui", '_blank').focus();
 
                     $(`
-                       <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                       <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -100,10 +104,10 @@ $(document).ready(function(){
                 }
 
                 else if(this.value === "linkedin"){
-                    window.open("https://www.linkedin.com/in/karson-hodge/", '_blank').focus();
+                    window.open(configJson["social"]["linkedin"], '_blank').focus();
 
                     $(`
-                       <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                       <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -118,7 +122,7 @@ $(document).ready(function(){
                     window.open(configJson["social"]["github"], '_blank').focus();
 
                     $(`
-                       <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                       <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -134,7 +138,7 @@ $(document).ready(function(){
                     $(`<div style="">
                         ${g}<br>
                         </div>
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -163,7 +167,7 @@ $(document).ready(function(){
                         -----<br>
                         ${links}
                         </div>
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -180,7 +184,7 @@ $(document).ready(function(){
                         TuxTerminal: Error, Command not found, please type 'help' if unsure.<br>
                          
                         </div>
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
@@ -192,7 +196,7 @@ $(document).ready(function(){
                 }
                 else{
                     $(`
-                        <div class="cursor"><span style="color: chartreuse;padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
                     <input class="lineEnd" type="text" autofocus style="border: none; background-color: #232323; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
