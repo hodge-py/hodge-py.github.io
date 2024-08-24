@@ -43,3 +43,11 @@ and the site will automatically update.
 }
 
 ```
+
+Files can be added and liked for anybody visiting your page to download.
+
+
+## Setting Up
+
+Setup is very simple. Just clone the repository, update the information and add any necessary files
+to the folder. The webpage should open to the terminal once the files are hosted.
