@@ -26,6 +26,7 @@ $(document).ready(function(){
                         Type 'resume' for a text based resume to be shown<br>
                         Type 'github' to view my GitHub account<br>
                         Type 'linkedin' to view my LinkedIn<br>
+                        Type 'project' to view links to projects<br>
                         Type 'summary' for a complete list<br>
                         Type 'gui' for the graphical portfolio site<br>
                          
@@ -133,6 +134,36 @@ $(document).ready(function(){
                     });
                 }
 
+                else if(this.value === "project"){
+                    let links = "";
+                    for (const key in configJson){
+                        if(key === "projects"){
+                            if (configJson.hasOwnProperty(key)) {
+                                for (const key1 in configJson[key]){
+                                    console.log(configJson[key][key1]);
+                                    links += "<a href=" + configJson[key][key1] + " target='_blank'>" + configJson[key][key1] + "</a><br>"
+                                }
+                            }
+                        }
+                    }
+
+                    $(`
+                        <div>
+                        Projects<br>
+                        --------<br>
+                        ${links}
+                        </div>
+                       <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+                }
+
                 else if(hold === "echo"){
                     var g = this.value.substring(4,this.value.length);
                     $(`<div style="">
@@ -150,7 +181,7 @@ $(document).ready(function(){
                 }
 
                 else if(this.value === "files"){
-                    var links = ""
+                    let links = ""
                     for (const key in configJson){
                         if(key === "files"){
                             if (configJson.hasOwnProperty(key)) {
