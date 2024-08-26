@@ -27,8 +27,9 @@ $(document).ready(function(){
                         Type 'github' to view my GitHub account<br>
                         Type 'linkedin' to view my LinkedIn<br>
                         Type 'project' to view links to projects<br>
-                        Type 'summary' for a complete list<br>
+                        Type 'files' to view links to files<br>
                         Type 'gui' for the graphical portfolio site<br>
+                        Type 'summary' for a complete list<br>
                          
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
