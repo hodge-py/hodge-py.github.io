@@ -90,6 +90,23 @@ $(document).ready(function(){
 
                 }
 
+                else if(this.value === "readme"){
+                    store = marked.parse(configJson["readme"]);
+                    $(`<div id="">
+                        ${store}
+                        </div>
+                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                        `).insertAfter($(".cursor").last());
+
+                    var element = document.getElementById("terminal");
+                    element.scrollTop = element.scrollHeight;
+                    $("input").select().focus().blur(function() {
+                        setTimeout(function() { $("input").focus(); }, 0);
+                    });
+
+                }
+
                 else if(this.value === "gui"){
                     window.open(configJson["gui"], '_blank').focus();
 
