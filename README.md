@@ -40,7 +40,7 @@ and the site will automatically update.
     "terminal@": "chartreuse",
     "topBar": "slategrey"
   },
-"projects": {
+  "projects": {
     "project1": "https://pxlart.xyz",
     "project2": "https://tmplink.xyz",
     "project3": "https://unknown-md.com/",
