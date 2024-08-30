@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     var configJson = ""
+    var stack = []
 
     $.getJSON("config.json", function(json) {
         configJson = json;
@@ -20,6 +21,7 @@ $(document).ready(function(){
                 $("<span />", { text: this.value, "class":"view" }).insertAfter(this);
                 $(this).hide();
                 var hold = this.value.substring(0,4)
+                stack.push(this.value);
                 if(this.value === "help"){
 
                     $(`<div>
@@ -286,7 +288,16 @@ $(document).ready(function(){
         setTimeout(function() { $("input").focus(); }, 0);
     });
 
-
+    var valUp = -1
+    document.addEventListener("keydown", function(event) {
+        if (event.key == "ArrowUp") {
+            if ($(".lineEnd").val() == ""){
+                valUp = -1
+            }
+            $(".lineEnd").val(stack.at(valUp))
+            valUp += -1
+        }
+    })
 
 
 
