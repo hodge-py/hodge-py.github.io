@@ -39,6 +39,12 @@ and the site will automatically update.
     "textColor": "white",
     "terminal@": "chartreuse",
     "topBar": "slategrey"
+  },
+  "projects": {
+    "project1": "https://pxlart.xyz",
+    "project2": "https://tmplink.xyz",
+    "project3": "https://unknown-md.com/",
+    "project4": "https://github.com/hodge-py/hodge-py.github.io"
   }
 }
 
