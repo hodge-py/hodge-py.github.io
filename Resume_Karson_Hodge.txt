@@ -1,27 +1,27 @@
 Karson Hodge
-Calgary, AB | 403-820-2405 | khodge1@hotmail.com | https://hodge-py.github.io/ 
+Calgary, AB | 403-820-2405 | khodge1@hotmail.com | Portfolio 
 
 EDUCATION
-Southern Arkansas University	Aug 2023 – Present
+Southern Arkansas University	2023 – 2025
 Master of Science in Computer and Information Science
 * Cumulative GPA: 3.8 / 4.0
 * Concentration in Data Science
 * Advanced Programming Concepts, Database Management Systems.
 
-University of Lethbridge	Sept 2016 – Apr 2021
+University of Lethbridge	2016 – 2021
 Bachelor of Science in Applied Statistics
 * Concentration in Economics	
 	
 WORK EXPERIENCE	
 Eaton Corporation	Calgary, AB
-Continuous Improvement Intern	May 2024 – Present
+Continuous Improvement Intern	2024
 * Assumed the role of product specialist along with all duties associated when filling in for a full-time employee on five weeks leave.
 * Handled the operations of the panel board line, maintaining a safe level of uptime to ensure production targets were met.
 * Redesigned inventory layout and implemented a new labelling system, reducing item retrieval time by ease of access and standardization.
 * Developed and implemented protocols for efficient data loading, minimizing errors and improving data reliability.
 
 Peoples Trust Company	Calgary, AB
-Real Estate Analyst	Feb 2022 – July 2023
+Real Estate Analyst	2022 – 2023
 * Provided Underwriting for CMHC insured commercial loans to verify information, calculate risk, and insert profit spread.
 * Utilized excel to build cashflow models of pre-existing or construction-based properties, using financials and broker provided packages.
 * Verified new purchases of existing properties by either completing an internal assumption or CMHC approved replacement of covenant.
@@ -29,16 +29,12 @@ Real Estate Analyst	Feb 2022 – July 2023
 * Maintained strong lines of communication with colleagues to assure deals are vetted and processed correctly.
 
 Universal Rehabilitation Service Agency	Calgary, AB
-Data Analyst and Quality Assurance	NOV 2021 – Feb 2022
+Data Analyst and Quality Assurance	2021 – 2022
 * Developed and utilized databases with Microsoft Excel to improve quality control.
 * Modelled confidential data with accurate charts, metrics, and trends to evaluate programs impact.
 * Audited licenses and program files vetting for any legal mistakes or incorrect forms in compliance with accreditation agency standards.
 * Proposed new data collection strategies while maintaining great verbal and written communication with management to improve the development of documentation and policy.
 * Initiated a research project with Python and its statistical analysis modules to analyse program goals and develop dashboards with Power BI.
-
-PROJECTS	
-Unknown-md.com	Feb 2024 – Present
-* Markdown editor and render built with a HTML, CSS, JavaScript, and PHP Stack with the Bootstrap Framework and jQuery library.
 
 ADDITIONAL	
 Languages: Python, Java, SQL, JavaScript, HTML, and CSS.
