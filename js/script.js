@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
     var configJson = ""
     var stack = []
 
