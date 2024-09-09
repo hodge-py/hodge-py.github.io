@@ -10,9 +10,10 @@ $(document).ready(function(){
         // this will show the info it in firebug console
         $("#name2").text(`Created By ${configJson["secondName"]}`)
         $("#barTerm").text(`TuxTerminal@${configJson["nameTop"]}: ~$`)
-        $("body").css({"background-color": configJson["colors"]["background"]})
+        $("body").css("background-image", "url(" + configJson["colors"]["background"] + ")").css("background-size", "cover");
         $(".textColor").css("color", configJson["colors"]["textColor"]);
-        $(".topBar").css({"background-color": configJson["colors"]["topBar"]})
+        $(".textColor").css("background-color", configJson["colors"]["terminalColor"]);
+        $(".topBar").css("background-color", configJson["colors"]["topBar"])
 
     });
 
@@ -37,7 +38,7 @@ $(document).ready(function(){
                          
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -66,7 +67,7 @@ $(document).ready(function(){
                          
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -83,7 +84,7 @@ $(document).ready(function(){
                          </pre>
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -100,7 +101,7 @@ $(document).ready(function(){
                         ${store}
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -116,7 +117,7 @@ $(document).ready(function(){
 
                     $(`
                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -131,7 +132,7 @@ $(document).ready(function(){
 
                     $(`
                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -146,7 +147,7 @@ $(document).ready(function(){
 
                     $(`
                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -176,7 +177,7 @@ $(document).ready(function(){
                         ${links}
                         </div>
                        <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -192,7 +193,7 @@ $(document).ready(function(){
                         ${g}<br>
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -221,7 +222,7 @@ $(document).ready(function(){
                         ${links}
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -238,7 +239,7 @@ $(document).ready(function(){
                          
                         </div>
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
@@ -250,7 +251,7 @@ $(document).ready(function(){
                 else{
                     $(`
                         <div class="cursor"><span style="color: ${configJson["colors"]["terminal@"]}; padding-right: .0%;">TuxTerminal@KarsonHodge:~$</span>
-                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["background"]}; width: 75%;" /></div>
+                    <input class="lineEnd" type="text" autofocus style="border: none; background-color: ${configJson["colors"]["terminalColor"]}; width: 75%;" /></div>
                         `).insertAfter($(".cursor").last());
 
                     var element = document.getElementById("terminal");
