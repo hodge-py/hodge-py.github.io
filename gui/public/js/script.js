@@ -10,7 +10,10 @@ $(document).ready(function() {
 
 
     var i = 0;
-    var txt = "I'm Karson Hodge, a Fullstack Developer."; /* The text */
+    var txtChange = "Fullstack Developer.";
+    var txtChange2 = "Data Scientist."
+    var txt = `I'm Karson Hodge, a ${txtChange}`; /* The text */
+    var txt2 = "I'm Karson Hodge, a "
     var speed = 70; /* The speed/duration of the effect in milliseconds */
     document.getElementById("body-text").innerHTML = ""
     function typeWriter() {
@@ -20,9 +23,27 @@ $(document).ready(function() {
             i++;
             setTimeout(typeWriter, speed);
         }
+        else{
+            setInterval(switchTxt, 3000);
+        }
     }
 
     typeWriter();
+
+    var flag = false
+    function switchTxt(){
+        if (flag){
+            flag = !flag;
+            document.getElementById("body-text").innerHTML = txt2 + txtChange;
+        }
+        else{
+            flag = !flag;
+            document.getElementById("body-text").innerHTML = txt2 + txtChange2;
+        }
+
+    }
+
+
 
 
     window.onscroll = function() {myFunction()};
